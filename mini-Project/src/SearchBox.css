@@ -1,0 +1,79 @@
+.SearchBox {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.SearchBox form {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  background-color: #283845; /* deep blue/gray */
+  padding: 14px 22px;
+  border-radius: 14px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.SearchBox form:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+.SearchBox input {
+  width: 280px;
+  max-width: 100%;
+  font-size: 1rem;
+  padding: 12px 18px;
+  border: 1.8px solid #555f6e;
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+  background-color: #2d3a50;
+  color: #e0e0e0;
+}
+
+.SearchBox input::placeholder {
+  color: #a0a8b8;
+}
+
+.SearchBox input:focus {
+  border-color: #4a90e2;
+  outline: none;
+  background-color: #394c7d;
+  color: #fff;
+}
+
+.SearchBox button {
+  padding: 12px 28px;
+  background-color: #4a90e2;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(74, 144, 226, 0.6);
+  white-space: nowrap;
+  min-width: 120px;
+}
+
+.SearchBox button:hover {
+  background-color: #356ac3;
+  box-shadow: 0 8px 16px rgba(53, 106, 195, 0.8);
+}
+
+@media (max-width: 500px) {
+  .SearchBox form {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .SearchBox input {
+    width: 100%;
+  }
+  .SearchBox button {
+    width: 100%;
+    min-width: unset;
+  }
+}

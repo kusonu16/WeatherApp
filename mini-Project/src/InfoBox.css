@@ -1,0 +1,150 @@
+/* .InfoBox {
+  text-align: center;
+  margin-top: 25px;
+  padding: 15px 20px;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  color: #e3e3e3;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.InfoBox:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0 10px;
+}
+
+.cardContainer > div {
+  background: #2a2a2a;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  min-width: 150px;
+  color: #cfd8dc;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.cardContainer > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 600px) {
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardContainer > div {
+    width: 80%;
+    min-width: unset;
+    margin-bottom: 15px;
+  }
+} */
+
+
+
+.InfoBox {
+  text-align: center;
+  margin-top: 25px;
+  padding: 15px 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  color: #e3e3e3;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.InfoBox:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0 10px;
+}
+
+/* ⬛ MUI Card root style */
+.MuiCard-root {
+  background: #2a2a2a !important;
+  color: #cfd8dc;
+  border-radius: 16px !important;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* 🖼 MUI CardMedia style */
+.MuiCardMedia-root {
+  height: 140px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  object-fit: cover;
+}
+
+/* 📝 Typography - Title */
+.MuiTypography-h5 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #90caf9; /* Light blue */
+}
+
+/* 📝 Typography - body text */
+.MuiTypography-body2 {
+  font-size: 1rem;
+  text-align: center ;
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* ⬇️ paragraph spacing */
+.MuiTypography-body2 p {
+  margin: 15px 0;
+  color: #e0e0e0;
+}
+
+/* 📱 Responsive adjustments */
+@media (max-width: 600px) {
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .MuiCard-root {
+    width: 90% !important;
+  }
+
+  .MuiTypography-h5 {
+    font-size: 1.3rem;
+  }
+
+  .MuiTypography-body2 {
+    font-size: 0.95rem;
+  }
+}
